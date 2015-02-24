@@ -1,0 +1,22 @@
+machine:
+  environment:
+    ANDROID_HOME: /home/ubuntu/android
+
+dependencies:
+  cache_directories:
+    - ~/.android
+    - ~/android
+  override:
+    - sh ./install-dependencies.sh
+    - sh ./gradlew dependencies
+
+test:
+  override:
+      - sh ./gradlew test
+
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - sh ./gradlew assembleDebug
