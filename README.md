@@ -1,3 +1,6 @@
+**Obsolete**:
+With the Design Support Library announced during IO15 comes the [CollapsingToolbarLayout](http://developer.android.com/reference/android/support/design/widget/CollapsingToolbarLayout.html) which is much more powerful, elegant and easier to use. Use it!
+
 # CollapsingHeader
 It's like an Android ToolBar reacting to a scroll listener, but not quite.
 
